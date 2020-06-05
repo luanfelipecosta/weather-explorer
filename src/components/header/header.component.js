@@ -4,7 +4,7 @@ import { Container, SearchBar, Title } from './header.styled';
 import { fetchForecast } from '../../utils/api';
 import { Input, SuccessButton } from '../../modules/weather/find-city/find-city.styled';
 
-const Header = () => {
+export const Header = () => {
   const [search, setValue] = useState('');
   const { push } = useHistory();
 
@@ -25,7 +25,16 @@ const Header = () => {
 
   return (
     <Container>
-      <Title onClick={goHome}>Weather App</Title>
+      <Title onClick={goHome}>
+        <span aria-label="weather emojis" role="img">
+          🌈{' '}
+        </span>
+        ClimaExplorer
+        <span aria-label="weather emojis" role="img">
+          {' '}
+          ❄️
+        </span>
+      </Title>
       <SearchBar>
         <Input placeholder="São Paulo" onChange={handleChange} value={search} />
         <SuccessButton onClick={handleSearch} inline>
@@ -35,5 +44,3 @@ const Header = () => {
     </Container>
   );
 };
-
-export default Header;

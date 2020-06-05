@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import FindCityPage from './find-city/find-city.page';
 import WeatherResultsPage from './weather-results/weather-results.page';
 import WeatherDetailsPage from './weather-details/weather-details.page';
-import Header from '../../components/header/header.component';
+import { Header, Credits } from '../../components';
 
 export const WeatherRouter = () => (
   <>
@@ -13,5 +13,6 @@ export const WeatherRouter = () => (
       <Route path="/weather-details" component={WeatherDetailsPage} />
       <Route exact path="/" component={FindCityPage} />
     </Switch>
+    <Credits />
   </>
 );

@@ -3,10 +3,10 @@ import { Button, Input as RawInput } from 'antd';
 import BG from '../../../assets/pattern.svg';
 
 export const Container = styled.div`
+  padding-top: 28vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   background-image: url(${BG});
   height: 100vh;
   width: 100vw;
@@ -18,15 +18,6 @@ export const H1 = styled.h1`
   font-size: 42px;
 `;
 
-export const AppName = styled.h1`
-  color: #fff;
-  font-size: 55px;
-  position: absolute;
-  transform: translateX(-50%);
-  left: 50%;
-  top: 120px;
-`;
-
 export const SuccessButton = styled(Button)`
   color: #fff;
   background-color: #5cb85c;
@@ -34,6 +25,13 @@ export const SuccessButton = styled(Button)`
   border-radius: 8px;
   margin-top: ${({ inline }) => (inline ? 0 : '16px')};
   margin-left: ${({ inline }) => (!inline ? 0 : '16px')};
+  transition: all 0.25s ease-in-out;
+
+  &:hover {
+    color: #fff;
+    background-color: #4ea04e;
+    border-color: #439b43;
+  }
 `;
 
 export const Input = styled(RawInput)`
