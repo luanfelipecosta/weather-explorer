@@ -2,7 +2,9 @@
 
 A dead simple app to find the current weather conditions in your location.
 
-[Demo](https://clima-finder.netlify.app/)
+## Demo App 
+
+[Click here to open demo link](https://clima-finder.netlify.app/)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
