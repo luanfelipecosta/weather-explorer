@@ -14,8 +14,8 @@ const WeatherDetailsPage = ({ location: { state } }) => {
       </Content>
       <Content>
         <Label>{weather[0].description}</Label>
-        <Label>Mínima: {toCelcius(temp.min)} º</Label>
-        <Label>Máxima: {toCelcius(temp.max)} º</Label>
+        <Label>Mínima: {toCelcius(temp.min)} º C</Label>
+        <Label>Máxima: {toCelcius(temp.max)} º C</Label>
       </Content>
     </div>
   );
