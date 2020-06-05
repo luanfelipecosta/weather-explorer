@@ -18,6 +18,15 @@ export const H1 = styled.h1`
   font-size: 42px;
 `;
 
+export const AppName = styled.h1`
+  color: #fff;
+  font-size: 55px;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 120px;
+`;
+
 export const SuccessButton = styled(Button)`
   color: #fff;
   background-color: #5cb85c;
